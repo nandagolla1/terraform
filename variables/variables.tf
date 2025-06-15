@@ -30,12 +30,6 @@ variable "sg_description" {
   description = "allow all port inbound and outbounf traffic"
 }
 
-variable "sg_name" {
-  type = string
-  default = "allow_alls"
-  description = "name of the security group"
-}
-
 variable "sg_tag" {
   type = map(string)
   default = {
