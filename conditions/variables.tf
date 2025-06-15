@@ -79,3 +79,7 @@ variable "ipv6_cidr_blocks" {
   default = [ "::/0" ]
   description = "allows all ipv6 traffic"
 }
+
+variable "environment" {
+  default = "dev"
+}
