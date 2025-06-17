@@ -87,6 +87,14 @@ variable "environment" {
 variable "instances_loop" {
   type = list(string)
   default = [ "mongodb", "redis", "catalogue", "user", "cart", "frontend" ]
+  /*default = {
+    mongodb = "t3.micro"
+    redis = "t3.micro"
+    catalogue = "t3.micro"
+    user = "t3.micro"
+    cart = "t3.micro"
+    frontend = "t3.micro"
+  }*/
 }
 
 variable "zone_id" {
