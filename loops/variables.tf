@@ -88,3 +88,11 @@ variable "instances_loop" {
   type = list(string)
   default = [ "mongodb", "redis", "catalogue", "user", "cart", "frontend" ]
 }
+
+variable "zone_id" {
+  default = "Z0241085GWXCWOXHL9YW"
+}
+
+variable "domain" {
+  default = "nanda.cyou"
+}
