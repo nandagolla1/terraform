@@ -83,3 +83,8 @@ variable "ipv6_cidr_blocks" {
 variable "environment" {
   default = "dev"
 }
+
+variable "instances_loop" {
+  type = list(string)
+  default = [ "mongodb", "redis", "catalogue", "user", "cart", "frontend" ]
+}
